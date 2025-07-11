@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web dengan Formatting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            background-image: url("https://play-lh.googleusercontent.com/Xhmj8ArppJ_5h-owHAhQUYZ7VY3UEAfGdeQMMQ-DyX96sUPpFMdzfwSCcld3Yd5SnCGp=w480-h960-rw");
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .date {
+            font-size: 18px;
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            padding: 10px 20px;
+            line-height: 1.6;
+        }
+
+        .img {
+            max-width: 30%;
+            width : 500px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            align-items: center;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang di Website Formatting</h1>
+        <div class="date">Tanggal: {{ date }}</div>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhpD6X2FLMOHkAJ-fopWhOzmqsag7FESZP9Q&s" class="img" />
+        <p>Ini adalah contoh teks yang diformat dengan baik. Anda dapat menambahkan lebih banyak konten di sini.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhmEmewJB7sUqb2K5cIdmR3n7KBWxEz9WaX_ZyQ78byu3dUOgxYGIIUCMyuFr2-kTubPo&usqp=CAU" class="img" />
+
+        
+        <a href="https://www.liverpoolfc.com/" target="_blank">Link tentang Liverpool</a>
+
+        <div class="content">
+            <p>
+                Earth, third planet from the Sun and the fifth largest planet in the solar system in terms of size and mass. <br>
+                Its single most outstanding feature is that its near-surface environments are the only places in the universe known to harbour life. <br>
+                It is designated by the symbol ♁. Earth’s name in English, the international language of astronomy, derives from Old English and Germanic words for ground and earth, <br>
+                and it is the only name for a planet of the solar system that does not come from Greco-Roman mythology. <br>
+                Earth is part of the "observable universe," the region of space that humans can actually or theoretically observe with the aid of technology. <br>
+                Unlike the observable universe, the universe is possibly infinite.<br>
+            </p>
+
+            <button onclick="alert('Tombol diklik!')">Klik Saya!</button>
+
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flag_of_Earth.svg/1200px-Flag_of_Earth.svg.png" alt="Bendera Bumi">
+            <button onclick="window.location.href='https://www.wikipedia.org/wiki/Earth'">Baca Lebih Lanjut</button>
+
+        </div>
+    </div> 
+    <footer
+        style="text-align: center; margin-top: 20px; color: #777;">
+        &copy; Aminah Nurrahmawati. All rights reserved.
+    </footer>    
+</body>
+</html>
